@@ -162,18 +162,7 @@ const preventDefault = (e: Event) => {
         backgroundColor: settingsStore.playSound ? 'rgba(110, 110, 110, 0.8)' : '',
       }"
     >
-      <img
-        class="dbr-music-selected"
-        src="../assets/image/music-selected.svg"
-        alt="Music-selected"
-        v-show="settingsStore.playSound"
-      />
-      <img
-        class="dbr-music-unselected"
-        src="../assets/image/music-unselected.svg"
-        alt="Music-unselected"
-        v-show="!settingsStore.playSound"
-      />
+     
     </div>
     <label class="dbr-current-mode" v-show="!captureImageStore.isShowCaptureImagePage">{{ currentModeName }}</label>
     <HeaderRightPart />
